@@ -1,0 +1,11 @@
+variable,descripcion,unidad,tipo,origen
+trimestre,Trimestre de corte (ej. 2T26 = abril-junio 2026),texto,identificador,Construido por el equipo
+fecha_corte,Último día del trimestre,fecha AAAA-MM-DD,identificador,Construido por el equipo
+entidad_reportante,Entidad que publica la cifra: Bancolombia S.A. consolidado hasta 1T25; Grupo Cibest (nueva matriz) desde 2T25,texto,control de calidad,SEC Form 6-K
+icv30_consumo_pct,VARIABLE OBJETIVO. Cartera de consumo vencida a más de 30 días / cartera bruta de consumo,%,real observado,SEC Form 6-K (informes trimestrales de resultados)
+icv30_total_pct,Cartera total vencida a más de 30 días / cartera bruta total (contexto; no entra al modelo),%,real observado,SEC Form 6-K
+icv90_total_pct,Cartera total vencida a más de 90 días / cartera bruta total (contexto; no entra al modelo),%,real observado,SEC Form 6-K
+cartera_bruta_total_cop_millones,Cartera bruta total consolidada (contexto; la caída en 4T25 refleja cambio de perímetro del grupo),millones de COP,real observado,SEC Form 6-K
+tasa_banrep_pct,VARIABLE EXPLICATIVA. Tasa de política monetaria del Banco de la República vigente al cierre del trimestre,%,real observado,Comunicados Junta Directiva BanRep y prensa económica
+tasa_verificada,"si = valor confirmado con fuente consultada en este trabajo; no = valor tomado de la historia conocida de decisiones de BanRep, pendiente de cotejar con la serie oficial (suameca.banrep.gov.co)",si/no,control de calidad,Equipo
+fuente_cartera,Documento exacto (fecha de publicación del 6-K) de donde se tomó la cifra de cartera,texto,trazabilidad,SEC EDGAR
